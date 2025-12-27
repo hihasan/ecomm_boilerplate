@@ -1,4 +1,5 @@
 package xyz.hihasan.ecom.h_commerce
+import io.swagger.v3.oas.annotations.media.Schema
 import jakarta.persistence.*
 import java.math.BigDecimal
 import java.time.OffsetDateTime
@@ -10,6 +11,7 @@ data class ProductModel (
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
+    @Schema(description = "Name of the product", example = "Wireless Mouse")
     @Column(nullable = false)
     val name: String,
 
