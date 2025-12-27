@@ -1,7 +1,10 @@
-package xyz.hihasan.ecom.h_commerce
+package xyz.hihasan.ecom.h_commerce.product.domain.service.impl
 
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
+import xyz.hihasan.ecom.h_commerce.product.domain.model.ProductModel
+import xyz.hihasan.ecom.h_commerce.product.domain.repository.ProductRepository
+import xyz.hihasan.ecom.h_commerce.product.domain.service.ProductService
 
 @Service
 @Transactional

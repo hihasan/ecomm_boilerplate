@@ -68,3 +68,15 @@ kotlin {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+
+tasks.register<Exec>("generateOpenApi") {
+    group = "documentation"
+    description = "Generate OpenAPI specification"
+
+    commandLine(
+        "curl",
+        "http://localhost:8080/v3/api-docs",
+        "-o",
+        "${projectDir}/docs/openapi.json"
+    )
+}

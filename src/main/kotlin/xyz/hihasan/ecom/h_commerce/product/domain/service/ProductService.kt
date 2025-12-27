@@ -1,4 +1,6 @@
-package xyz.hihasan.ecom.h_commerce
+package xyz.hihasan.ecom.h_commerce.product.domain.service
+
+import xyz.hihasan.ecom.h_commerce.product.domain.model.ProductModel
 
 interface ProductService {
     fun create(product: ProductModel): ProductModel

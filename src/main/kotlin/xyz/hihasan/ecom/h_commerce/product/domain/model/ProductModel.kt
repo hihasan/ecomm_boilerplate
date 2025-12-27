@@ -1,4 +1,4 @@
-package xyz.hihasan.ecom.h_commerce
+package xyz.hihasan.ecom.h_commerce.product.domain.model
 import io.swagger.v3.oas.annotations.media.Schema
 import jakarta.persistence.*
 import java.math.BigDecimal
