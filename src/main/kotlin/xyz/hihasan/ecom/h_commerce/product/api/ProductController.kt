@@ -2,6 +2,7 @@ package xyz.hihasan.ecom.h_commerce.product.api
 
 import io.swagger.v3.oas.annotations.tags.Tag
 import org.springframework.http.HttpStatus
+import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.PostMapping
@@ -76,7 +77,7 @@ final class ProductController(private val productService: ProductService) {
     }
 
     @GetMapping
-    fun getActiveProducts(): List<ProductModel> {
-        return productService.getAllActive()
+    fun getActiveProducts(): ResponseEntity<*> {
+        return ResponseEntity(productService.getAllActive(), HttpStatus.OK)
     }
 }

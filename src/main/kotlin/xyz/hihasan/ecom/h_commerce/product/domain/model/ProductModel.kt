@@ -13,16 +13,16 @@ data class ProductModel (
 
     @Schema(description = "Name of the product", example = "Wireless Mouse")
     @Column(nullable = false)
-    val name: String,
+    val name: String = "",
 
     @Column(nullable = false, unique = true)
-    val sku: String,
+    val sku: String = "",
 
     @Column(nullable = false)
-    val price: BigDecimal,
+    val price: BigDecimal= BigDecimal.ZERO,
 
     @Column(nullable = false)
-    val quantity: Int,
+    val quantity: Int = 0,
 
     @Column(length = 500)
     val description: String? = null,

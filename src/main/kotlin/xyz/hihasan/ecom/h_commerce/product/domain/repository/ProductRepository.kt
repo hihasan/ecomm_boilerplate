@@ -8,6 +8,4 @@ import java.util.Optional
 @Repository
 interface ProductRepository : JpaRepository<ProductModel, Long> {
     fun findBySku(sku: String): Optional<ProductModel>
-
-    fun findAllByActiveTrue(): List<ProductModel>
 }

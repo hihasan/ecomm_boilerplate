@@ -9,6 +9,4 @@ data class ProductResponseDTO(
     val price: BigDecimal,
     val quantity: Int,
     val active: Boolean
-){
-
-}
+)

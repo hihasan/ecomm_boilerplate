@@ -19,6 +19,6 @@ class ProductServiceImpl(private val productRepository: ProductRepository) : Pro
     }
 
     override fun getAllActive(): List<ProductModel> {
-        return productRepository.findAllByActiveTrue()
+        return productRepository.findAll()
     }
 }
